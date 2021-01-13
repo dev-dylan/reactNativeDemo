@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <style>
+  *{ font-size:30px; margin:25px 25px}
+</style> -->
+<head>
+  <meta http-equiv="Content-Type" content="charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="initial-scale=1, maximum=1,minimum=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo</title>
+  <script type="text/javascript">
+  var liuLiu = "变量一";
+  //alert("#######" + liuLiu);
+  </script>
+<script>
+  (function(para) {
+    var p = para.sdk_url, n = para.name, w = window, d = document, s = 'script',x = null,y = null;
+    if(typeof(w['sensorsDataAnalytic201505']) !== 'undefined') {
+        return false;
+    }
+    w['sensorsDataAnalytic201505'] = n;
+    w[n] = w[n] || function(a) {return function() {(w[n]._q = w[n]._q || []).push([a, arguments]);}};
+    var ifs = ['track','quick','register','registerPage','registerOnce','trackSignup', 'trackAbtest', 'setProfile','setOnceProfile','appendProfile', 'incrementProfile', 'deleteProfile', 'unsetProfile', 'identify','login','logout','trackLink','clearAllRegister','getAppStatus'];
+    for (var i = 0; i < ifs.length; i++) {
+      w[n][ifs[i]] = w[n].call(null, ifs[i]);
+    }
+    if (!w[n]._t) {
+      x = d.createElement(s), y = d.getElementsByTagName(s)[0];
+      x.async = 1;
+      x.src = p;
+      x.setAttribute('charset','UTF-8');
+      w[n].para = para;
+      y.parentNode.insertBefore(x, y);
+    }
+  })({
+  //sdk_url: './sensorsdata.full.js',
+  sdk_url: 'https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.15.1/sensorsdata.min.js',
+  //heatmap_url: './heatmap.full.js',
+  heatmap_url: 'https://cdn.jsdelivr.net/npm/sa-sdk-javascript@1.15.1/heatmap.min.js',
+  name: 'sa',
+  //server_url: 'http://test-syg.datasink.sensorsdata.cn/sa?token=27f1e21b78daf376&project=jiangwenwen',
+  //server_url: 'https://test-syg.datasink.sensorsdata.cn/sa?project=jiangwenwen&token=27f1e21b78daf376',
+  server_url: 'https://newsdktest.datasink.sensorsdata.cn/sa?project=wangyangyang&token=5a394d2405c147ca',
+  use_app_track: true,
+<!--  app_js_bridge: true,-->
+  //use_app_track_is_send: 0,
+  heatmap:{
+    clickmap:'default',
+    scroll_notice_map:'default',
+    //loadTimeout:  3000, 
+    //custom_property:function( element_target ){
+    //比如您需要给有 data=test 属性的标签的点击事件增加自定义属性 name:'aa' ，则代码如下
+    //return {
+      //test_all_name:'bb'
+		//	}
+		// if(element_target.getAttribute('data') === 'test'){
+		// 	return {
+		// 		test_name:'aa'
+		// 	}
+    // }
+    
+	//},
+  },
+  //batch_send:true,
+  source_channel:['lixiang','kkkkk','jjjj'],
+  //send_type:'ajax',
+  //use_app_track:true,
+//   preset_properties: {
+//     //是否采集$latest_utm最近一次广告系列相关参数，默认值true
+//     latest_utm:true,
+//     //是否采集$latest_traffic_source_type最近一次流量来源类型，默认值true
+//     latest_traffic_source_type:true,
+//     //是否采集$latest_search_keyword最近一次搜索引擎关键字，默认值true
+//     latest_search_keyword:true,
+//     //是否采集$latest_referrer最近一次前向地址，默认值true
+//     latest_referrer:true,
+//     //是否采集$latest_referrer_host最近一次前向地址，1.14.8以下版本默认是true，1.14.8及以上版本默认是false，需要手动设置为true开启
+//     latest_referrer_host:true,
+//     //是否采集$latest_landing_page最近一次落地页地址，默认值false
+//     latest_landing_page:true,
+//     //是否采集 $url 页面地址作为公共属性，默认值false
+//     url: false,
+//     title:true
+// } 
+});
+// sa.registerPage({
+//   $device_id:"1qaz2wsx"
+//       });
+  sa.quick('autoTrack');
+  //sa.setProfile({email:'xxx@xx'});
+</script>
+<style> 
+        .black_overlay{ 
+            display: none;
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 100%; 
+            background-color: black; 
+            z-index:1001; 
+            -moz-opacity: 0.8; 
+            opacity:.80; 
+            filter: alpha(opacity=88); 
+        } 
+        .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 25%; 
+            left: 25%; 
+            width: 55%; 
+            height: 55%; 
+            padding: 20px; 
+            border: 10px solid orange; 
+            background-color: white; 
+            z-index:1002; 
+            overflow: auto; 
+        } 
+        .box{
+            width:50%; margin-top:10%; margin:auto; padding:28px;
+            height:350px; border:1px #111 solid;
+            display:none;            /* 默认对话框隐藏 */
+        }
+        .box.show{display:block;} 
+        .box .x{ font-size:18px; text-align:right; display:block;}
+        .box input{width:80%; font-size:18px; margin-top:18px;}
+    </style> 
+</head>
+
+<body>
+  <script>
+    // var iszero2 = "aaaaa";
+     sa.registerPage({
+       test_istest_test:true
+      });
+    // sa.quick('autoTrack',{$lib_detail:'##clickNavFunc##nav.js##28'});
+  </script>
+<div>
+    <p>弹出层：
+      <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">请点这里</a>
+    </p> 
+    <div id="light" class="white_content">关闭弹出层：
+      <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">点这里关闭本窗口</a>
+    </div> 
+    <div id="fade" class="black_overlay"></div>
+
+</div>
+
+
+
+
+<input type="text" placeholder="输入搜索关键词" id="keyWord"/>
+<button type="button" id="sosuo" data="test" onClick="msgbox(1)" >点击弹出输入框</button>
+<script>  
+        function msgbox(n){
+            document.getElementById('inputbox').style.display=n?'block':'none';     /* 点击按钮打开/关闭 对话框 */
+        }
+</script>  
+<div id='inputbox' class="box">
+  <a class='x' href=''; onclick="msgbox(0); return false;">关闭</a>
+    <input type="text">
+    <button type="button">确定</button>
+</div>
+<div class="dbtn_accept" id="div" name="">我是DIV2</div> 
+<script>
+document.getElementById("div").onclick = function(){
+  iszero2 = "bbbb";
+  console.log("t123456");
+  sa.quick('trackHeatMap',this,{
+    //$element_target_url: 'test1',
+    //id:123456,
+    //distinct_id:"1qaz2wsx",
+    user_id:20190218,
+   // datetime:"2020-02-16 15:51:21",
+    //funtion:"1234qwer"
+	});
+}
+</script>
+
+<script>
+
+</script>
+<a href="XXXXX" data2="test2" sensors-disable="true"></a>
+
+<a href="https://jiangwenwensa.github.io/app-h5-test/mi-jiang/miIiang.html" data2="test2" sensors-disable="true"><div></div><div>你好</div>
+  <a href="https://www.binance.com/en/lending" data2="test2" id="test3"><div></div><div>VUE 单页面</div>
+</a>
+
+<a href="javascript:void(0);">
+<img src="./peiqi.jpeg" width="402" height="403"onclick="selectImage()"/>tupian3
+</a>
+<script>
+  function selectImage(){
+    console.log("!@#%^1111111111111");
+          sa.quick('trackAllHeatMap',window.event.srcElement,{
+				customProp1: 'test1', //如果需要添加自定义属性需要将 SDK 升级到 1.13.7 及以上版本。
+				customProp2: 'test2'
+			}, function() {
+				console.log('callback');
+			}); 
+
+  }
+  </script>
+
+<div>
+  <div>
+   <div>
+                        <a href="htffundxjb://action?type=pension&amp;subType=home">
+                            <div>                           
+                            </div>
+                            <div style="margin-top:0.85rem;font-size: 0.65rem;color:#000000">养老专区</div></a>
+                    </div>
+                    </div>
+                    </div>
+
+<button id="tijiao">提交</button>
+<script>
+// document.getElementById("test2").onclick = function(){
+//         sa.track('ViewTesthello', {
+//                 name: 'Abc'},function(){
+//         //console.log("&&&&&&&&&&&&&&");
+//         }
+// );
+//}
+</script>
+<script>
+document.getElementById("tijiao").onclick = function(){
+        sa.track('$viewHello2', {
+                name: "2019_11_06_08",
+                $test:"abcde",
+                test1: NaN,
+                test2: undefined,
+                test3: null,
+                isDate: function() {
+    return 'A date string' // 返回字符串
+  },
+                isTest: function() {
+
+  }
+            });
+}
+document.getElementById("test3").onclick = function(){
+        sa.trackLink(this,"seeTrackLink",{
+                link: '你好2'});
+}
+</script>
+<script>
+// $(function(){
+//         sa.track('ViewJww', {
+//                 name: '123456'
+//             });
+// })
+
+</script>
+
+<input type="text" value="填写内容" id="tianxie" />填写
+
+<select name="省份" id="shengfen"> 
+<option value="0">北京</option> 
+<option value="1">上海</option> 
+<option value="2">合肥</option> 
+</select> 
+
+<script>
+document.getElementById("shengfen").onchange = function(){
+  var tianxie = document.getElementById("tianxie");
+  console.log("!!!!!!!!!!!!!!!!!!!!!!!"+this);
+  console.log("!@@@@@@@@@@@@@@@@@@");
+        sa.quick('trackHeatMap',this); 
+}
+
+</script>
+<button data2="test2">测试</button>
+<div data2="test22" id="wenzi2" onclick="selectStock('旋极信息')">测试</div>
+<div data2="test22" id="wenzi22">测试</div>
+<script>
+function selectStock(stockName){
+        sa.quick('trackHeatMap',window.event.srcElement); 
+}
+//window.onunload = function() { 
+   //console.log("123aaa456");
+   //};
+</script>
+<textarea name="" id="" cols="30" rows="10">im textarea1</textarea>
+<textarea name="" id="" cols="30" rows="10">im textarea2</textarea>
+<textarea name="" id="" cols="30" rows="10">im textarea3</textarea>
+<p  style="height:1000px"></p>
+</body>
+
+</html> 
