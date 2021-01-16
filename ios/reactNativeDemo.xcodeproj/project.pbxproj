@@ -49,10 +49,9 @@
 		E34E01BF9F4A40A9867F4973 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5588DEE398CD4C89B1A541F2 /* Entypo.ttf */; };
 		E84A657A8BF7444B895FBC2E /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D666F7714204470FA91CD1B1 /* EvilIcons.ttf */; };
 		F951BD5FBA4B4EF19D83ABF6 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB2550A0E244FC4BFCE8D81 /* libRNVectorIcons.a */; };
+		FC10768C25B2EA5D00177905 /* SensorsAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC10768425B2EA5500177905 /* SensorsAnalyticsSDK.framework */; };
+		FC10768D25B2EA5D00177905 /* SensorsAnalyticsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC10768425B2EA5500177905 /* SensorsAnalyticsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC59DCA124A35C14007A0F36 /* newH5.html in Resources */ = {isa = PBXBuildFile; fileRef = FC59DCA024A35C14007A0F36 /* newH5.html */; };
-		FCD3C8F425AECAFF009A78A7 /* SAReactNativeHussar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCD3C8EF25AECAF4009A78A7 /* SAReactNativeHussar.framework */; };
-		FCEDA00F25A59A0E008F18A4 /* SensorsAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEDA00725A59A02008F18A4 /* SensorsAnalyticsSDK.framework */; };
-		FCEDA01025A59A0E008F18A4 /* SensorsAnalyticsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FCEDA00725A59A02008F18A4 /* SensorsAnalyticsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -420,37 +419,30 @@
 			remoteGlobalIDString = 3DBE0D0D1F3B181C0099AA32;
 			remoteInfo = "fishhook-tvOS";
 		};
-		FC889E4E25A80C9100A291AE /* PBXContainerItemProxy */ = {
+		FC10767725B2EA3300177905 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FC889E1925A80C9100A291AE /* RNSensorsAnalyticsModule.xcodeproj */;
+			containerPortal = 79E9CA8567934ED3A749DAB8 /* RNSensorsAnalyticsModule.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A18E9FA621A6AB4300A66E41;
 			remoteInfo = RNSensorsAnalyticsModule;
 		};
-		FCD3C8EE25AECAF4009A78A7 /* PBXContainerItemProxy */ = {
+		FC10768325B2EA5500177905 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FCD3C8B525AECAF4009A78A7 /* SAReactNativeHussar.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = FCFB64DF25AE9ED50005BEF7;
-			remoteInfo = SAReactNativeHussar;
-		};
-		FCEDA00625A59A02008F18A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FCEDA00025A59A02008F18A4 /* SensorsAnalyticsSDK.xcodeproj */;
+			containerPortal = FC10767D25B2EA5500177905 /* SensorsAnalyticsSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CB30BD5422840CA40004061D;
 			remoteInfo = SensorsAnalyticsSDK;
 		};
-		FCEDA00825A59A02008F18A4 /* PBXContainerItemProxy */ = {
+		FC10768525B2EA5500177905 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FCEDA00025A59A02008F18A4 /* SensorsAnalyticsSDK.xcodeproj */;
+			containerPortal = FC10767D25B2EA5500177905 /* SensorsAnalyticsSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CB30C30F22843D3A0004061D;
 			remoteInfo = SensorsAnalyticsExtension;
 		};
-		FCEDA00A25A59A02008F18A4 /* PBXContainerItemProxy */ = {
+		FC10768725B2EA5500177905 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FCEDA00025A59A02008F18A4 /* SensorsAnalyticsSDK.xcodeproj */;
+			containerPortal = FC10767D25B2EA5500177905 /* SensorsAnalyticsSDK.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = CB6EBAE3228551EC003CFBA8;
 			remoteInfo = SensorsAnalyticsTests;
@@ -464,7 +456,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FCEDA01025A59A0E008F18A4 /* SensorsAnalyticsSDK.framework in Embed Frameworks */,
+				FC10768D25B2EA5D00177905 /* SensorsAnalyticsSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +507,7 @@
 		627C8FFC487D46B5BA00DEA2 /* RNFS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
 		64F7B4A9226EDD4B00C98C40 /* RCTCameraRoll.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCameraRoll.xcodeproj; path = "../node_modules/react-native/Libraries/CameraRoll/RCTCameraRoll.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
+		79E9CA8567934ED3A749DAB8 /* RNSensorsAnalyticsModule.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSensorsAnalyticsModule.xcodeproj; path = "../node_modules/sensorsdata-analytics-react-native/ios/RNSensorsAnalyticsModule.xcodeproj"; sourceTree = "<group>"; };
 		7B861A6A573E48C28BC42E8C /* libRNReanimated-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNReanimated-tvOS.a"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8D740B86151F4D9CB9AE6F39 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
@@ -535,10 +528,8 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F25D35FB735C45689799A32A /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		FA276A18E5634AB09DACE2AE /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
+		FC10767D25B2EA5500177905 /* SensorsAnalyticsSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SensorsAnalyticsSDK.xcodeproj; path = "../../../GitLab/sa-sdk-ios/SensorsAnalyticsSDK.xcodeproj"; sourceTree = "<group>"; };
 		FC59DCA024A35C14007A0F36 /* newH5.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = newH5.html; sourceTree = "<group>"; };
-		FC889E1925A80C9100A291AE /* RNSensorsAnalyticsModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSensorsAnalyticsModule.xcodeproj; path = "../../../../../Documents/GitLab/react-native-sensors-analytics/ios/RNSensorsAnalyticsModule.xcodeproj"; sourceTree = "<group>"; };
-		FCD3C8B525AECAF4009A78A7 /* SAReactNativeHussar.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SAReactNativeHussar.xcodeproj; path = ../../../../../Documents/GitHub/SAReactNativeHussar/SAReactNativeHussar.xcodeproj; sourceTree = "<group>"; };
-		FCEDA00025A59A02008F18A4 /* SensorsAnalyticsSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SensorsAnalyticsSDK.xcodeproj; path = "../../../../../Documents/GitLab/sa-sdk-ios-test/SensorsAnalyticsSDK.xcodeproj"; sourceTree = "<group>"; };
 		FE0B1E51EDE74423A76531A4 /* RNCGeolocation.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCGeolocation.xcodeproj; path = "../node_modules/@react-native-community/geolocation/ios/RNCGeolocation.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -552,7 +543,7 @@
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
-				FCEDA00F25A59A0E008F18A4 /* SensorsAnalyticsSDK.framework in Frameworks */,
+				FC10768C25B2EA5D00177905 /* SensorsAnalyticsSDK.framework in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
@@ -570,7 +561,6 @@
 				B17C0E840F4C4E4D9669D31F /* libRNCGeolocation.a in Frameworks */,
 				8357166439E74626883A8EC2 /* libRNReanimated.a in Frameworks */,
 				4EC51276072E4CFAA4438B65 /* libRNScreens.a in Frameworks */,
-				FCD3C8F425AECAFF009A78A7 /* SAReactNativeHussar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,9 +793,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				FCD3C8B525AECAF4009A78A7 /* SAReactNativeHussar.xcodeproj */,
-				FC889E1925A80C9100A291AE /* RNSensorsAnalyticsModule.xcodeproj */,
-				FCEDA00025A59A02008F18A4 /* SensorsAnalyticsSDK.xcodeproj */,
+				FC10767D25B2EA5500177905 /* SensorsAnalyticsSDK.xcodeproj */,
 				9F27262C2458349E00324EB2 /* SafeAreaView.xcodeproj */,
 				9F2726262458341F00324EB2 /* RNCMaskedView.xcodeproj */,
 				64F7B4A9226EDD4B00C98C40 /* RCTCameraRoll.xcodeproj */,
@@ -828,6 +816,7 @@
 				FE0B1E51EDE74423A76531A4 /* RNCGeolocation.xcodeproj */,
 				5CB412E882BF4E059195ED40 /* RNReanimated.xcodeproj */,
 				CD33A4711E6D448CAA6FBBC1 /* RNScreens.xcodeproj */,
+				79E9CA8567934ED3A749DAB8 /* RNSensorsAnalyticsModule.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -924,28 +913,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC889E1A25A80C9100A291AE /* Products */ = {
+		FC10764325B2EA3300177905 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC889E4F25A80C9100A291AE /* libRNSensorsAnalyticsModule.a */,
+				FC10767825B2EA3300177905 /* libRNSensorsAnalyticsModule.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FCD3C8B625AECAF4009A78A7 /* Products */ = {
+		FC10767E25B2EA5500177905 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FCD3C8EF25AECAF4009A78A7 /* SAReactNativeHussar.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FCEDA00125A59A02008F18A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FCEDA00725A59A02008F18A4 /* SensorsAnalyticsSDK.framework */,
-				FCEDA00925A59A02008F18A4 /* SensorsAnalyticsExtension.framework */,
-				FCEDA00B25A59A02008F18A4 /* SensorsAnalyticsTests.xctest */,
+				FC10768425B2EA5500177905 /* SensorsAnalyticsSDK.framework */,
+				FC10768625B2EA5500177905 /* SensorsAnalyticsExtension.framework */,
+				FC10768825B2EA5500177905 /* SensorsAnalyticsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1080,8 +1061,8 @@
 					ProjectRef = CD33A4711E6D448CAA6FBBC1 /* RNScreens.xcodeproj */;
 				},
 				{
-					ProductGroup = FC889E1A25A80C9100A291AE /* Products */;
-					ProjectRef = FC889E1925A80C9100A291AE /* RNSensorsAnalyticsModule.xcodeproj */;
+					ProductGroup = FC10764325B2EA3300177905 /* Products */;
+					ProjectRef = 79E9CA8567934ED3A749DAB8 /* RNSensorsAnalyticsModule.xcodeproj */;
 				},
 				{
 					ProductGroup = 64F7B492226EDCAF00C98C40 /* Products */;
@@ -1092,12 +1073,8 @@
 					ProjectRef = 9F27262C2458349E00324EB2 /* SafeAreaView.xcodeproj */;
 				},
 				{
-					ProductGroup = FCD3C8B625AECAF4009A78A7 /* Products */;
-					ProjectRef = FCD3C8B525AECAF4009A78A7 /* SAReactNativeHussar.xcodeproj */;
-				},
-				{
-					ProductGroup = FCEDA00125A59A02008F18A4 /* Products */;
-					ProjectRef = FCEDA00025A59A02008F18A4 /* SensorsAnalyticsSDK.xcodeproj */;
+					ProductGroup = FC10767E25B2EA5500177905 /* Products */;
+					ProjectRef = FC10767D25B2EA5500177905 /* SensorsAnalyticsSDK.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1472,39 +1449,32 @@
 			remoteRef = FC0B0D2124C58AC200EBBF6D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FC889E4F25A80C9100A291AE /* libRNSensorsAnalyticsModule.a */ = {
+		FC10767825B2EA3300177905 /* libRNSensorsAnalyticsModule.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libRNSensorsAnalyticsModule.a;
-			remoteRef = FC889E4E25A80C9100A291AE /* PBXContainerItemProxy */;
+			remoteRef = FC10767725B2EA3300177905 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FCD3C8EF25AECAF4009A78A7 /* SAReactNativeHussar.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SAReactNativeHussar.framework;
-			remoteRef = FCD3C8EE25AECAF4009A78A7 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		FCEDA00725A59A02008F18A4 /* SensorsAnalyticsSDK.framework */ = {
+		FC10768425B2EA5500177905 /* SensorsAnalyticsSDK.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SensorsAnalyticsSDK.framework;
-			remoteRef = FCEDA00625A59A02008F18A4 /* PBXContainerItemProxy */;
+			remoteRef = FC10768325B2EA5500177905 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FCEDA00925A59A02008F18A4 /* SensorsAnalyticsExtension.framework */ = {
+		FC10768625B2EA5500177905 /* SensorsAnalyticsExtension.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = SensorsAnalyticsExtension.framework;
-			remoteRef = FCEDA00825A59A02008F18A4 /* PBXContainerItemProxy */;
+			remoteRef = FC10768525B2EA5500177905 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FCEDA00B25A59A02008F18A4 /* SensorsAnalyticsTests.xctest */ = {
+		FC10768825B2EA5500177905 /* SensorsAnalyticsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = SensorsAnalyticsTests.xctest;
-			remoteRef = FCEDA00A25A59A02008F18A4 /* PBXContainerItemProxy */;
+			remoteRef = FC10768725B2EA5500177905 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1603,6 +1573,7 @@
 					"$(SRCROOT)/../node_modules/sensorsdata-react-native-test/ios",
 					"$(SRCROOT)/../node_modules/sensorsdata-react-native-test/ios",
 					"$(SRCROOT)/../node_modules/sensorsdata-analytics-react-native/ios",
+					"$(SRCROOT)/../node_modules/sensorsdata-analytics-react-native/ios",
 				);
 				INFOPLIST_FILE = reactNativeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1638,6 +1609,7 @@
 					"$(SRCROOT)/../node_modules/react-native-screens/ios",
 					"$(SRCROOT)/../node_modules/sensorsdata-react-native-test/ios",
 					"$(SRCROOT)/../node_modules/sensorsdata-react-native-test/ios",
+					"$(SRCROOT)/../node_modules/sensorsdata-analytics-react-native/ios",
 					"$(SRCROOT)/../node_modules/sensorsdata-analytics-react-native/ios",
 				);
 				INFOPLIST_FILE = reactNativeDemo/Info.plist;
