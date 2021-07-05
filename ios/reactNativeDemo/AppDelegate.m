@@ -41,7 +41,7 @@
 //初始化 SA
 -(void)init_SA:(NSDictionary *)launchOptions{
   
-  static NSString* Sa_Default_ServerURL = @"https://newsdktest.datasink.sensorsdata.cn/sa?project=wangyangyang&token=5a394d2405c147ca";
+  static NSString* Sa_Default_ServerURL = @"http://10.120.243.129:8106/sa?project=default";
   
 //  static NSString* Sa_Default_ServerURL = @"http://test-syg.datasink.sensorsdata.cn/sa?token=27f1e21b78daf376&project=jiangwenwen";
   SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:Sa_Default_ServerURL launchOptions:launchOptions];
@@ -72,7 +72,7 @@
   //h5 打通方案
 //  [[SensorsAnalyticsSDK sharedInstance] addWebViewUserAgentSensorsDataFlag:NO];
   //设置上传网络策略
-  [[SensorsAnalyticsSDK sharedInstance] setFlushNetworkPolicy:SensorsAnalyticsNetworkTypeNONE];
+  // [[SensorsAnalyticsSDK sharedInstance] setFlushNetworkPolicy:SensorsAnalyticsNetworkTypeNONE];
   //采集屏幕方向
   [[SensorsAnalyticsSDK sharedInstance] enableTrackScreenOrientation:YES];
   //采集 GPS 信息

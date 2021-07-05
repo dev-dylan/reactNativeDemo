@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, View, Alert,Text } from 'react-native';
+import { Button, View, Alert,Text, TouchableOpacity } from 'react-native';
 import Card from '../../widget/card';
 import Package from '../../widget/package';
 import { NativeModules } from 'react-native';
@@ -65,12 +65,19 @@ class CustomPackage extends Component {
         <Card html={[COMPONENT_VALUE, "自定义事件"]} codeHeight={10}>
           <View>
             <TouchableHighlight><Text>没有实现点击的 Text</Text></TouchableHighlight>
-            <View><Button sensorsdataparams={{"testKert":"sdfas"}} title="自定义埋点 ~ 一期功能" onPress={()=>{
-              var set11 = new Set([1, 2, 3]); // 含1, 2, 3
-              analytics.track('testTrack', {testKey:set11});
-
+            <View><Button title="OC 调用 JS 方法" onPress={()=> {
+              console.log('Hello world!!!!111');
+              console.log("JS 端打印日志");
+              analytics.logMessage();
             }} /></View>
-            <View><Button title="手动埋点事件 ~ 一期功能" onPress={()=> analytics.trackViewScreen('testViewScreen', {"$url":"testViewScreenValue"})} /></View>
+            <View><Button title="自定义返回按钮" onPress={()=>{
+              this.props.navigation.goBack();
+            }} /></View>
+            <View><Button sensorsdataparams={{"testKert":"sdfas"}} title="自定义埋点 ~ 一期功能" onPress={()=>{
+              analytics.track('testTrack', {testKey:"1231","$lib_method":"111"});
+              console.log("这是一段测试的字符串，通过 JavaScript 打印");
+            }} /></View>
+            <View><TouchableOpacity sensorsAnalyticsViewID={'testID'} onPress={()=> analytics.trackViewScreen('testViewScreen', {"$url":"testViewScreenValue","$lib_method":"111"})}><Text>手动自定义事件 ~ 一期功能</Text></TouchableOpacity></View>
             <View><Button title="手动渠道事件 ~ 一期功能" onPress={()=> analytics.trackChannelEvent('testChannelEvent',{testChannelkey:'testChannelValue'})} /></View>
             <View><Button title="设置事件回调 ~ 三期功能 - 缺失" onPress={()=> analytics.setTrackEventCallback('testChannelEvent',{testChannelkey:'testChannelValue'})} /></View>
           </View>
@@ -117,7 +124,7 @@ class CustomPackage extends Component {
         <Card html={[COMPONENT_VALUE, "事件计时"]} codeHeight={10}>
           <View>
             <View><Button title="开始自定义埋点事件 ~ 一期功能" onPress={()=> analytics.trackTimerStart('testTimer')} /></View>
-            <View><Button title="停止自定义埋点事件 ~ 一期功能" onPress={()=> analytics.trackTimerEnd('testTimer', {})} /></View>
+            <View><Button title="停止自定义埋点事件 ~ 一期功能" onPress={()=> analytics.trackTimerEnd('testTimer', {"$lib_method":"111"})} /></View>
             <View><Button title="暂停事件计时 ~ 三期功能" onPress={()=> analytics. trackTimerPause("testTimer")} /></View>
             <View><Button title="恢复事件计时  ~ 三期功能" onPress={()=> analytics. trackTimerResume("testTimer")} /></View>
             <View><Button title="清除所有埋点计时 ~ 一期功能" onPress={()=> analytics.clearTrackTimer()} /></View>

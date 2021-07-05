@@ -3,13 +3,14 @@ import { Button, View, Alert,Text } from 'react-native';
 import Card from '../../widget/card';
 import Package from '../../widget/package';
 import { NativeModules } from 'react-native';
-import analytics from 'sensorsdata-analytics-react-native/index';
+// import analytics from '../../GitLab/react-native-sensors-analytics/index'
 
 // const analytics = NativeModules.RNSensorsAnalyticsModule;
 // const RNSensorsDataModule = NativeModules.RNSensorsDataModule;
 
 const COMPONENT_LABEL = '跨平台的按钮组件';
 const COMPONENT_VALUE = 'Button';
+const analytics = NativeModules.React;
 
 class CustomPackage extends Component {
 
