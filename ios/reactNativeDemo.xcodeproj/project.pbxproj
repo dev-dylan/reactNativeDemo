@@ -49,6 +49,10 @@
 		E34E01BF9F4A40A9867F4973 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5588DEE398CD4C89B1A541F2 /* Entypo.ttf */; };
 		E84A657A8BF7444B895FBC2E /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D666F7714204470FA91CD1B1 /* EvilIcons.ttf */; };
 		F951BD5FBA4B4EF19D83ABF6 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB2550A0E244FC4BFCE8D81 /* libRNVectorIcons.a */; };
+		FC17159F2697F50C000CBC3A /* project.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = FC1715662697F50C000CBC3A /* project.jsbundle */; };
+		FC1715A22697F816000CBC3A /* RNCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1715A12697F816000CBC3A /* RNCommonViewController.m */; };
+		FC1715A52697F97F000CBC3A /* RNRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1715A42697F97F000CBC3A /* RNRootViewController.m */; };
+		FC1715A726983E0D000CBC3A /* reactNativeDemo.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = FC1715A626983E0D000CBC3A /* reactNativeDemo.jsbundle */; };
 		FC1CBECA26661CBA000BAB71 /* SensorsAnalyticsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1CBEC526661CA8000BAB71 /* SensorsAnalyticsSDK.framework */; };
 		FC1CBECB26661CBA000BAB71 /* SensorsAnalyticsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC1CBEC526661CA8000BAB71 /* SensorsAnalyticsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC209DCF25CBD577001D9FEA /* hello.js in Resources */ = {isa = PBXBuildFile; fileRef = FC209D9625CBD577001D9FEA /* hello.js */; };
@@ -465,7 +469,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
@@ -528,6 +531,12 @@
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F25D35FB735C45689799A32A /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		FA276A18E5634AB09DACE2AE /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
+		FC1715662697F50C000CBC3A /* project.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = project.jsbundle; sourceTree = "<group>"; };
+		FC1715A02697F816000CBC3A /* RNCommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCommonViewController.h; sourceTree = "<group>"; };
+		FC1715A12697F816000CBC3A /* RNCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCommonViewController.m; sourceTree = "<group>"; };
+		FC1715A32697F97F000CBC3A /* RNRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNRootViewController.h; sourceTree = "<group>"; };
+		FC1715A42697F97F000CBC3A /* RNRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNRootViewController.m; sourceTree = "<group>"; };
+		FC1715A626983E0D000CBC3A /* reactNativeDemo.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = reactNativeDemo.jsbundle; sourceTree = "<group>"; };
 		FC1CBEBE26661CA8000BAB71 /* SensorsAnalyticsSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SensorsAnalyticsSDK.xcodeproj; path = "../../../GitLab/sa-sdk-ios-test/SensorsAnalyticsSDK.xcodeproj"; sourceTree = "<group>"; };
 		FC209D9625CBD577001D9FEA /* hello.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hello.js; sourceTree = "<group>"; };
 		FC30A3F625E7B33D0064C82D /* RNSensorsAnalyticsModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNSensorsAnalyticsModule.xcodeproj; path = "../../../GitLab/react-native-sensors-analytics/ios/RNSensorsAnalyticsModule.xcodeproj"; sourceTree = "<group>"; };
@@ -643,8 +652,13 @@
 		13B07FAE1A68108700A75B9A /* reactNativeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FC1715A02697F816000CBC3A /* RNCommonViewController.h */,
+				FC1715A12697F816000CBC3A /* RNCommonViewController.m */,
+				FC1715A32697F97F000CBC3A /* RNRootViewController.h */,
+				FC1715A42697F97F000CBC3A /* RNRootViewController.m */,
+				FC1715A626983E0D000CBC3A /* reactNativeDemo.jsbundle */,
+				FC1715662697F50C000CBC3A /* project.jsbundle */,
 				FC59DCA024A35C14007A0F36 /* newH5.html */,
-				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -1495,6 +1509,7 @@
 				46116DC1AB1D422188654473 /* Feather.ttf in Resources */,
 				DCD290E536D74612A5FA8B7B /* FontAwesome.ttf in Resources */,
 				FC59DCA124A35C14007A0F36 /* newH5.html in Resources */,
+				FC1715A726983E0D000CBC3A /* reactNativeDemo.jsbundle in Resources */,
 				D75FF7AA8AF046B581DC6BA7 /* FontAwesome5_Brands.ttf in Resources */,
 				6C888E5198DF43BBA19166BC /* FontAwesome5_Regular.ttf in Resources */,
 				2A00EAE4CCDB445B8A1B38DC /* FontAwesome5_Solid.ttf in Resources */,
@@ -1506,6 +1521,7 @@
 				258235BB86E74F199865F0B1 /* Octicons.ttf in Resources */,
 				52D588C4B62F418FAE028078 /* SimpleLineIcons.ttf in Resources */,
 				8C6BB2E55F0D4A269BB9BC21 /* Zocial.ttf in Resources */,
+				FC17159F2697F50C000CBC3A /* project.jsbundle in Resources */,
 				BCB090B469B34A1C99A7D6CF /* Fontisto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1534,6 +1550,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1715A52697F97F000CBC3A /* RNRootViewController.m in Sources */,
+				FC1715A22697F816000CBC3A /* RNCommonViewController.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);

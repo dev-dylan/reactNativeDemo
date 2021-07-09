@@ -6,28 +6,17 @@
  */
 
 #import "AppDelegate.h"
-
-#import <React/RCTBridge.h>
-#import <React/RCTBundleURLProvider.h>
-#import <React/RCTRootView.h>
 #import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
+#import "RNRootViewController.h"
+#import "RNCommonViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
-  RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
-                                                   moduleName:@"reactNativeDemo"
-                                            initialProperties:nil];
-
-  rootView.backgroundColor = [[UIColor alloc] initWithRed:1.0f green:1.0f blue:1.0f alpha:1];
-
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-  UIViewController *rootViewController = [UIViewController new];
-  rootView.frame = rootViewController.view.bounds;
-  [rootViewController.view addSubview:rootView];
-  UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+  UIViewController *root = [[RNRootViewController alloc] init];
+  UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:root];
   self.window.rootViewController = navc;
   [self.window makeKeyAndVisible];
   
@@ -57,7 +46,7 @@
 //  options.enableReferrerTitle = YES;
   options.enableJavaScriptBridge = YES;
   [SensorsAnalyticsSDK startWithConfigOptions:options];
-  [[SensorsAnalyticsSDK sharedInstance] enableLog:YES];
+  [[SensorsAnalyticsSDK sharedInstance] enableLog:NO];
 //  [[SensorsAnalyticsSDK sharedInstance] clearReferrerWhenAppEnd];
 
   //公共属性
@@ -72,7 +61,7 @@
   //h5 打通方案
 //  [[SensorsAnalyticsSDK sharedInstance] addWebViewUserAgentSensorsDataFlag:NO];
   //设置上传网络策略
-  // [[SensorsAnalyticsSDK sharedInstance] setFlushNetworkPolicy:SensorsAnalyticsNetworkTypeNONE];
+   [[SensorsAnalyticsSDK sharedInstance] setFlushNetworkPolicy:SensorsAnalyticsNetworkTypeNONE];
   //采集屏幕方向
   [[SensorsAnalyticsSDK sharedInstance] enableTrackScreenOrientation:YES];
   //采集 GPS 信息
@@ -80,15 +69,6 @@
   [[SensorsAnalyticsSDK sharedInstance] enableHeatMap];
   [[SensorsAnalyticsSDK sharedInstance] enableVisualizedAutoTrack];
 
-}
-
-- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
-{
-#if DEBUG
-  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
-#else
-  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-#endif
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {

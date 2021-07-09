@@ -30,6 +30,9 @@ const Tab = createBottomTabNavigator(
     },
     API: {
       screen: API,
+      params: {
+        sensorsdataparams: { ignore: true }
+      },
       navigationOptions: {
         headerTitle: 'API',
         gesturesEnabled: true,

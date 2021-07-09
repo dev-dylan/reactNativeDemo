@@ -28,7 +28,7 @@
     "react-navigation": "^4.0.10",
     "react-navigation-stack": "^2.3.13",
     "react-navigation-tabs": "^2.8.12",
-    "sensorsdata-analytics-react-native": "^2.0.7"
+    "sensorsdata-analytics-react-native": "git+http://gitlab.internal.sensorsdata.cn/sensors-analytics/sdk/react-native-sensors-analytics.git#cr_feature_auto_track_ignore"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -41,8 +41,8 @@
   "jest": {
     "preset": "react-native"
   },
-  "sensorsdata": {
-    "click": "enable",
-    "pageview": "enable"
+  "sensorsData": {
+    "ignoreScreen": false,
+    "ignoreClick": false
   }
 }

@@ -8,7 +8,7 @@ class ComponentView extends Component {
   onFoldingItemOperate = item => {
     if ((item && item.platForm === Platform.OS) || !item.platForm) {
       this.props.navigation.navigate(item.value, {
-        sensorsdataparams: { hello: "hello",$title:item.value,$screen_name:item.value},
+        sensorsdataparams: { hello: "hello", $title: item.value, $screen_name: item.value },
       });
     }
   };
@@ -21,14 +21,14 @@ class ComponentView extends Component {
             <Text style={styles.tips_title_h1}>{VALUE.introduceTitle}</Text>
             <Text style={styles.tips_title_text}>{VALUE.introduce}</Text>
           </View>
-          <Button sensorsdataparams={{ "title":"sfdsfs", "keyt1":"渣打来福"}} title="自定义页面 - Module" onPress={()=>{
+          <Button sensorsdataparams={{ "title": "sfdsfs", "keyt1": "渣打来福" }} title="自定义页面 - Module" onPress={() => {
             this.props.navigation.navigate("Custom", {
-              sensorsdataparams: { "title":"sfdsfs", "keyt1":"渣打来福", "$lib_plugin_version":"12"},
+              sensorsdataparams: { "title": "sfdsfs", "keyt1": "渣打来福", "$lib_plugin_version": "12", ignore: true },
             });
           }} />
-          <Button title="自定义页面 - Index" onPress={()=>{
+          <Button title="自定义页面 - Index" onPress={() => {
             this.props.navigation.navigate("Custom1", {
-              sensorsdataparams: { "title":"sfdsfs", "keyt1":"渣打来福"},
+              sensorsdataparams: { "title": "sfdsfs", "keyt1": "渣打来福" },
             });
           }} />
           {componentLabel.map(item => (
